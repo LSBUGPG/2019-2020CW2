@@ -1,0 +1,42 @@
+FORMATION USER GUIDE PACKAGE 4; COLLECTABLES AND GAME COMPLETE
+
+This document explains the behaviours contained in this package and describes how to use them to make 
+a system as used in a 2D platformer game. 
+
+BEHAVIOURS 
+
+- Health pickup 
+- Coin pickup and score
+- "Game Complete" screen when player interacts with the flag 
+
+HEALTH PICKUP
+
+The code for this can be found within the script called HealthCollect. This works by using collider2D scripts 
+with the command OnCollisionEnter2D, which if it discovers anything with the tag "Player", it adds health by
+deducting the damage before it is then destroyed by the command Destroy(game.Object);
+
+COIN PICKUP AND SCORE
+
+The code for this can be found inside the script CoinCollect. It works in a simular way to the health pick-up, 
+where it uses OnCollisionEnter2D plus the players tag "Player" where it'll be destroyed. This then interacts with
+the UI text TotalCoins by finding the object and then using GetComponent<Text>(); so it can change the score. It 
+does this by using the split between the text and the semi colon and adds a numerical value to the score on the
+other side of the semi colon and calculates the current total.
+
+GAME COMPLETE WITH FLAG INTERACTION 
+
+Code can be found in the script Complete. This uses the flag game object found in the menu and much like the other 
+scripts, uses the OnCollisionEnter2D to complete the task. using the collision between the game object and the 
+player colliding with it (tagged as "Player") the code will find the game complete text in the UI and present it
+on screen after the player collides with the object. 
+
+HOW TO PLAY 
+
+- Press a & d or arrow keys left and right to move
+- "E" button function not required for this playthrough
+- Pick up yellow coins by moving through them 
+- Avoid red triangles or your health will go down 
+- Pick up green crosses to increase your health
+
+
+

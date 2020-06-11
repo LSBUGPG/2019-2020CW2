@@ -1,0 +1,16 @@
+FLIGHT READ ME DOCUMENTATION
+This purpose of this package is to give the user the base of a flight simulation. This document explains how to set this up.
+
+[ CONTENTS ]
+Documentation
+Examples
+- Example Scene, ‘ComponentOne’
+- PlaneWhole (prefab)
+- Ground (prefab)
+- Ground (material)
+Scripts
+- PlanePilot
+
+[ PlanePilot ]
+This script can be attached to any object. For the purpose of the example scene, a makeshift plane has been created using unity’s primitive cubes and grouped together using an empty game object. This empty has then been titled PlaneWhole, which the PlanePilot script is attached to.
+The script uses transform.forward input method to allow you to control the objects movement. It also has an extra piece of script that can be used along with the unity terrain tool which keeps the plane object from clipping through the terrain. 

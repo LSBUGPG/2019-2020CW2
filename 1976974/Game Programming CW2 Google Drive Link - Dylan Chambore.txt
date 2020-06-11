@@ -1,0 +1,25 @@
+19/20, Game Programming AME_5_GPG_1920
+
+Coursework 2 - Dylan Chambore
+
+Google Drive Link: https://drive.google.com/open?id=133GcICO-chX--KliPp6X88CgH5zue878
+
+The submissions for this coursework includes:
+
+The four packages:
+1) 2D Movement UpDown
+2) Enemy AI
+3) Random Map Generator
+4) Health Bar System
+
+The small game project: Game Project Master
+
+User guide document
+
+[All unity files are in zipped file]
+
+Learning Journal
+
+Programming Task Log - (including estimate and average error)
+
+-- Email me if one of these files or the link don't work or one of the items are missing. I'll sort it out immediately.

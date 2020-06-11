@@ -1,0 +1,3 @@
+give the script damageDealer to the object that have to deale damage.
+give the script plLife to all the objects that have to recive damage and thag them as stuff.
+sett the life of all the "stuff".

@@ -1,0 +1,57 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><title>LoadingScreen_Package.md</title><style></style></head><body id="preview">
+<h1 class="code-line" data-line-start=0 data-line-end=1><a id="Loading_Screen_Package_0"></a>Loading Screen Package</h1>
+<p class="has-line-data" data-line-start="2" data-line-end="4">This package allows to put customise and add a bit of polish to the game by adding the loading screen with the loading bar between the scenes. The package includes several pre-made prefabs and png buttons to add to the scene.<br>
+The scripts also allows to add and play animations in the scene.</p>
+<h3 class="code-line" data-line-start=5 data-line-end=6><a id="Package_contents_5"></a>Package contents:</h3>
+<ul>
+<li class="has-line-data" data-line-start="7" data-line-end="10">
+<p class="has-line-data" data-line-start="7" data-line-end="9"><strong>Documentation folder:</strong><br>
+Includes documentation that shows how to use the component.</p>
+</li>
+<li class="has-line-data" data-line-start="10" data-line-end="15">
+<p class="has-line-data" data-line-start="10" data-line-end="14"><strong>Examples folder</strong><br>
+Includes Two test scenes, Sprites Folder and Prefabs folder.<br>
+Sprites folder includes 2D Sprites for the test scenes.<br>
+Prefabs folder includes animated 2D sprite, slider and button.</p>
+</li>
+<li class="has-line-data" data-line-start="15" data-line-end="18">
+<p class="has-line-data" data-line-start="15" data-line-end="17"><strong>Scripts folder</strong><br>
+Includes <strong>Loading Screen</strong> script.</p>
+</li>
+</ul>
+<h3 class="code-line" data-line-start=18 data-line-end=19><a id="Instructions_18"></a>Instructions</h3>
+<ol>
+<li class="has-line-data" data-line-start="20" data-line-end="21">
+<p class="has-line-data" data-line-start="20" data-line-end="21">Create the new Canvas (UI-&gt; Canvas)#</p>
+</li>
+<li class="has-line-data" data-line-start="21" data-line-end="22">
+<p class="has-line-data" data-line-start="21" data-line-end="22">Add the <strong>“LoadingScreen”</strong> script to it.</p>
+</li>
+<li class="has-line-data" data-line-start="22" data-line-end="23">
+<p class="has-line-data" data-line-start="22" data-line-end="23">Create the button for this Canvas (UI-&gt;Button).</p>
+</li>
+<li class="has-line-data" data-line-start="23" data-line-end="26">
+<p class="has-line-data" data-line-start="23" data-line-end="25">In the “On click” menu in the button’s inspector drag the Canvas.(from 1.)<br>
+In the function drop down menu select new “LoadingScreen” function and then-&gt; Load ().</p>
+</li>
+<li class="has-line-data" data-line-start="26" data-line-end="27">
+<p class="has-line-data" data-line-start="26" data-line-end="27">Create new Canvas. (Let’s name it Loading Canvas)</p>
+</li>
+<li class="has-line-data" data-line-start="27" data-line-end="29">
+<p class="has-line-data" data-line-start="27" data-line-end="28">Drag the premade Slider from the prefabs folder to the scene.</p>
+</li>
+<li class="has-line-data" data-line-start="29" data-line-end="34">
+<p class="has-line-data" data-line-start="29" data-line-end="33">Select the First Canvas with the Script.<br>
+7.1 In the Script menu in the “Load Level” write the name of the Scene, that should be loaded (make sure it is added in the buil settings).<br>
+7.2 In the Loading Screen drag the new Loading Canvas.<br>
+7.3. Bring the Slider to the “Bar”</p>
+</li>
+</ol>
+<p class="has-line-data" data-line-start="34" data-line-end="36"><strong><em>As the loading bar in the test scene loads too fast (lightweight next scene) the scene appears when you press any key.<br>
+If you want to load the scene automatically after loading bar is full - delete the following code from the script:</em></strong></p>
+<pre><code class="has-line-data" data-line-start="37" data-line-end="42">if (Input.anyKeyDown)                            
+ {                                                         
+    asyncLoad.allowSceneActivation = true;              
+ }   
+</code></pre>
+</body></html>

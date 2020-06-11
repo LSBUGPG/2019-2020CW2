@@ -1,0 +1,21 @@
+OBJECT SPAWNER DOCUMENTATION
+The purpose of this package is to give the user an ‘object spawner’ which can be used and amended as appropriate to their needs.
+This document explains the contents and how to use this package.
+Package Contents –
+Documentation
+Examples
+	Example Scene (ComponentTwo)
+	cube (material)
+	cube (prefab)
+	ground (material)
+	ground (prefab)
+Scripts
+	Cube
+	CubeSpawner
+
+[[ Cube ]]
+This script needs to be attached to one of unity’s primitive 3D objects, in this example it is a cube. If you decide to use a different primitive or object entirely, this would need to be referenced in [[ CubeSpawner ]] script. (Instead of public GameObject cubePrefab; , you would replace it with public GameObject <whatever prefab you would rather use>Prefab;)
+
+[[ CubeSpawner ]]
+This script is to be attached to an empty GameObject. Ensure that the GameObjects Transform Position (y axis) is placed on top of the ground/floor used. In the example the ground is set to 0, 0, 0 and so the Spawning Object is set to 0, 2.5, 0 so that it sits on top.
+One this script is attached you will need to drag and drop the prefab that you wish for it to spawn.

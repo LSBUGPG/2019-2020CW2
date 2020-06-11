@@ -1,0 +1,12 @@
+I have learnt a lot of new and more efficient methods of coding while doing this project. For example, I'm very happy
+with how I've learnt to use functions more effectively and breaking it down into much more modular, easily referencable 
+parts. I have also learnt how to split up Classes better and modularise my code even more so it can be reused at later dates
+normally I used to code everything under one class as long as they were similar functions but this often led to hard to read and follow code.
+Both of these combined have improved the overall structure, readability and reusability of my code.
+
+Another thing I learnt was how to use switch statements which are great for systems where you can have different outputs based on the ID provided.
+This makes it easy to program in an ability system as all you need to do is increase or decrease an id value and it will pick the corresponding switch.
+
+I also learned how to use data classes more effectively in this project too. How to set them up and then set up a custom list using those data types.
+This worked really well in my AI controller as I was able to have a container for each enemy type that included the prefab you want to use, the round to spawn and their start HP.
+

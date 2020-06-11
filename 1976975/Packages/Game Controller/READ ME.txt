@@ -1,0 +1,10 @@
+Package Instructions
+---------------------
+1. The Game Controller script must be placed on an empty gameObject. Usable for a round based game
+
+2. The UI elements need to be filled with your own UI objects.
+
+3. To integrate this script into your own project the InitialiseRound function needs to call a SpawnFunction that can spawn enemies.
+   This can be coded into the same script but I recommend a separate script
+
+2. The number of rounds, round legnth, break length etc can be customised

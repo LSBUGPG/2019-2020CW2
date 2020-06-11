@@ -1,0 +1,5 @@
+create 2 objects and link them whit a spring joint.
+the objects are one on top of the other.
+give the script PLmovement to the down object and freez the rotation on x and z.
+give the script UpandDwn to the up object and disable the gravity. 
+set the value of the movement.  

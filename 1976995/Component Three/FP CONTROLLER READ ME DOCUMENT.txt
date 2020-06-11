@@ -1,0 +1,30 @@
+
+
+
+
+
+FP CONTROLLER READ ME DOCUMENT
+
+The purpose of this package is to give the user a functioning base of a first-person controller, open for them to interpret and amend to suit their needs. 
+This document explains how to use and set up your first-person controller.
+
+
+
+PACKAGE CONTENTS –
+Documentation Folder
+Examples
+- Example Scene, ‘ComponentThree’
+- Floor (prefab)
+- Obstacles (prefab)
+Scripts 
+- PlayerLook
+- PlayerMove
+
+[ PlayerLook ]
+This script should be attached to your ‘PlayerCamera’ which enables you to look around with the mouse, making use of an invisible cursor and clamping. 
+For the Player object, you will need an empty game object with a character controller component, and a camera. This camera will be your player camera. The camera is to be placed at the top of the game object. If your player game objects Y position is 0, you can set your camera Y position to 0.9. This will put the camera at the top of your player game object but prevent clipping when jumping into ceilings, for example.
+
+[ PlayerMove ]
+This script should be attached to the ‘PlayerBody’, which in the example given is the previously empty game object. This script applies an emphasis on the Z axis so that when using the input system to move, Z will always be forward.
+
+

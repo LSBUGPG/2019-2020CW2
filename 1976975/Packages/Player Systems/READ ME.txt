@@ -1,0 +1,15 @@
+Package Instructions
+----------------------
+1. The Camera Controller Script is placed on the Camera and a target is selected, this is typically the Player but can be anything. 
+   The camera offset and smooth speed can be customised.
+
+2. Player Movement is placed on the Player and a Character Controller should be grabbed automatically. The move speed of the player can be customised
+
+3. Player Shooting is also placed on the Player. The bullet speed, damage and Player rotation speed are all customisable. 
+   A fire point must be selected for the bullet to be instantiated. A gameObject must also be selected to be used as a bullet as well.
+
+4. The Player Bullet script should be placed on whatever object you want to use as a bullet. Then make that object a prefab that can be reused. 
+   Link it with Player Shooting
+
+5. Finally, the Player Health sript can be placed on the player. The total health value for the Player can be set. 
+   A text mesh field must be set up to display the Health Values

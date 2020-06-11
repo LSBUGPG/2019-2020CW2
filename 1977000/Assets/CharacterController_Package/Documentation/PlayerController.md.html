@@ -1,0 +1,37 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><title>PlayerController.md</title><style></style></head><body id="preview">
+<h1 class="code-line" data-line-start=0 data-line-end=1><a id="Player_Movement_Package_0"></a>Player Movement Package</h1>
+<p class="has-line-data" data-line-start="2" data-line-end="4">This package allows creating a complete player controller in Unity with the adjustable settings for multiple jumping.<br>
+This package also includes adjustable settings for speed and jump force.</p>
+<h3 class="code-line" data-line-start=5 data-line-end=6><a id="Package_contents_5"></a>Package contents:</h3>
+<ul>
+<li class="has-line-data" data-line-start="7" data-line-end="10">
+<p class="has-line-data" data-line-start="7" data-line-end="9"><strong>Documentation folder:</strong><br>
+Includes documentation that shows how to use the component.</p>
+</li>
+<li class="has-line-data" data-line-start="10" data-line-end="14">
+<p class="has-line-data" data-line-start="10" data-line-end="13"><strong>Examples folder</strong><br>
+Includes Test Scene and Sprites Folder.<br>
+Sprites folder include 2D Sprites for the test scene and Player’s material.</p>
+</li>
+<li class="has-line-data" data-line-start="14" data-line-end="17">
+<p class="has-line-data" data-line-start="14" data-line-end="16"><strong>Scripts folder</strong><br>
+Includes <strong>Player Controller</strong> script.</p>
+</li>
+</ul>
+<h3 class="code-line" data-line-start=17 data-line-end=18><a id="Instructions_17"></a>Instructions</h3>
+<h3 class="code-line" data-line-start=19 data-line-end=20><a id="Step_1_Setting_up_the_Scene_19"></a>Step 1. Setting up the Scene.</h3>
+<p class="has-line-data" data-line-start="21" data-line-end="24">Create and bring the player, ground and the background sprites to the scene (You can use the ones from examples folder for the test)<br>
+Create Box Collider 2D for the ground. (And for all the items that would be jumped/moved on)<br>
+Create the new layer for the floor And for all the items that would be jumped/moved on and name it <strong>ground</strong>.</p>
+<h3 class="code-line" data-line-start=25 data-line-end=26><a id="Step_2_Making_the_Player_Movable_25"></a>Step 2. Making the Player Movable.</h3>
+<p class="has-line-data" data-line-start="27" data-line-end="30">Create the Box Collider2D for the Player.<br>
+Create the RigidBody for the Player. Create a new Material for the player with 0 (zero) Friction and Bounciness.<br>
+Drag it to “Material” in the player’s RigidBody.</p>
+<p class="has-line-data" data-line-start="31" data-line-end="33">Select the player and click and drag the <strong>PlayerController</strong> Script from the <strong>Scripts</strong> folder.<br>
+Select the player and create an <strong>empty GameObject</strong>. Move it just under the player’s legs and name it “ground_check”.</p>
+<p class="has-line-data" data-line-start="34" data-line-end="39"><strong>Adgust the settings for the player in the Script Component:</strong><br>
+Bring the “ground_check” object to the Ground Check Cell.<br>
+Select the new created layer “ground” in the “What is Ground” Cell.<br>
+Change the Speed and Jump force.<br>
+Write the number for the Extra Jump Value (Minimum 1). This allows you to make multiple jumps.</p>
+</body></html>

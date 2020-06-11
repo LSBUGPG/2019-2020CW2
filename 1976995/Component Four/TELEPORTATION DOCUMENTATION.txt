@@ -1,0 +1,20 @@
+TELEPORTATION DOCUMENTATION
+
+The purpose of this package is to give the user a simple ‘teleportation’ ability.
+This document explains the contents of the package and how to use it.
+
+Package Contents –
+Documentation
+Examples
+	Example Scene (ComponentFour)
+	GameObject (prefab)
+	Player (prefab)
+	Teleporter (prefab)
+	Tutorial Scene
+Scripts
+	Teleportation
+
+[[ Teleportation ]]
+This script can be attached to any object that you wish to be the teleport point. It is essential to add a collider and rigidbody component to the object you select. Within the collider component, ensure that the ‘is trigger’ box is ticked. (If you have chosen a solid object to be your teleportation point, you can untick the ‘mesh renderer’.
+Once the script is attached to the object you wish, drag in the Player and the GameObject (teleportation destination point) into the teleporters script in the inspector. 
+Once all of this is complete, when you press play you will be able to move the player into the object and be teleported to wherever you’ve placed the game object. 

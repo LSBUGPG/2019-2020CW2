@@ -1,0 +1,52 @@
+FORMATION USER GUIDE PACKAGE 2; CHARACTER DAMAGE AND HEALTH SYSTEM
+
+This document explains the behaviours contained in this package and describes how to use them to make 
+a system as used in a 2D platformer game. 
+
+BEHAVIOURS 
+
+- Camera tracking 
+- Jumping 
+- Damage Player 
+- Health bar
+
+CAMERA TRACKING 
+
+can be found in the script setup CameraFollow. it works by creating a public transform titled "Target" so you can
+add the player to the script directly in the float and reference it in the script, which tracks player movement. 
+You can also adjust the offset and smooth speed in the float to get a smoother image of the player as the camera 
+tracks it. This is all set up in the script using Vector3 which uses target.poisition to find the player and then
+adjusts according to player speed and movement.
+
+JUMPING 
+
+Can be references in the script PlayerControl. This script uses raycasts to find out whether the player is
+interacting with the floor and then determines the jump height and velocity through an adjustable public float. 
+It determines what the ground is through a SerializeField refering to anything titled by the layer platforms, and
+anything not labelled platforms means that the player won't have the ability to jump. You can also adjust the weight
+of the players jump by using the player's RigidBody to increase the gravity, which will make for a smaller heavier
+jump the higher the gravity. 
+
+DAMAGE PLAYER 
+
+Damage inflicted onto the player is created through the script PlayerHealth. It works by using onCollisionStay2D
+which uses colliders to determine whether the game object the player is interacting with will inflict damage onto
+it. If the player interacts with any object with the tag "Enemy", the player will take one damage, which then 
+interacts with the health bar to show the players health being inflicted. 
+
+HEALTH BAR 
+
+There are two script set ups for the health bar system found in the scripts HealthBar and HealthSystem. The health
+bar set up works by interacting with the UI object slider which determines the slider value is of equal value to 
+the current health. The slider UI script itself uses the fill image in the UI as a way to show health increasing
+and decreasing. The HealthSystem script works by creating the public float for the slider to adjust the slider 
+health. 
+
+HOW TO PLAY 
+
+- Press a & d to move or arrow keys left and right 
+- Press Space to jump 
+- Red triangles take health 
+- Flag signals end of demo  
+
+

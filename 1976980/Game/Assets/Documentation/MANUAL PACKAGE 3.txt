@@ -1,0 +1,40 @@
+FORMATION USER GUIDE PACKAGE 3
+
+this document explains behaviours in this package and how to use them to play the level set up for this package that 
+demonstrates how to do enemy damage and movement 
+
+BEHAVIOURS;
+
+- Enemy movement 
+- Enemy health 
+- Death Respawn 
+
+ENEMY MOVEMENT
+
+listed in the script labeled "Patrol". This script uses a RayCastHit2D that casts rays onto the ground beneath it
+to recognise how far its travelled. If it detects no more ground space it then turns the AI around to pace back the
+other direction. 
+
+ENEMY HEALTH 
+
+Uses three scripts to destroy enemy health; Enemy, Weapon and Bullet. The weapon is a shooting script attached to
+the player that instigates the shooting of the bullet prefab. The bullet prefab has its own script that recognises
+Enemy through collision trigger and anything with the tag "Enemy". a public int determines the damage of the bullet.
+There is also a public int for Enemy health in the enemy script where the enemy health can be set there and
+determines if health = 0, then the script will initiate Destroy(game0bject); (deleting enemy from the game). 
+
+DEATH RESPAWN
+
+initated through PlayerHealth Script. If the player collides with the enemy through 2D collision, player takes 1
+damage (player has total 20 damage that can be altered in public in maxHealth). If the health goes to 0, the script
+initates sequence "KillPlayer", that relocates player position to gameObject Spawn Point with max health. This also
+happens if the player collides with the box collider set on "Killing Floor", which is a box collider set just below
+the empty spaces should the player fall through the world.
+
+HOW TO PLAY;
+
+- Player falls into game, you can move player by pressing A & D or arrow keys left & right
+- Press E to shoot enemies, if you collide with enemies your health will go down and you'll be respawned back in 
+- Press space to jump over gaps and up stairs 
+- Flag indicates there is no level left to play 
+

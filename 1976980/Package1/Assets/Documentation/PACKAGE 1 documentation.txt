@@ -1,0 +1,42 @@
+FORMATION USER GUIDE PACKAGE 1; CHARACTER MOVEMENT AND INTERACTION
+
+This document explains the behaviours contained in this package and describes how to use them to make 
+a system as used in a 2D platformer game. 
+
+BEHAVIOURS 
+
+- Character Movement
+- Dialogue Trigger 
+- Dialogue Manager 
+- NPC controller 
+
+CHARACTER MOVEMENT 
+
+Can be found in the script CharacterMove. It uses the RigidBody2D on the player to move the character around (Rigid
+Bodys are physics based which makes them ideal for movement). It calls upon this in the script and uses horizontal 
+movement to move the player, and does this by multiplying movement by speed to move the player.
+
+DIALOGUE TRIGGER 
+
+can be found within the script DialogueTrigger. This works by calling upon the public script Dialogue, and then finds the 
+script DialogueManager to start the dialogue its already called upon. 
+
+DIALOGUE MANAGER 
+
+Found in the script DialogueManager. This stores a large part of the scene including the animations for the pop up 
+UI dialogue. It works by queuing a string of sentences found in the Dialogue script and calling upon the next 
+sentence when it finishes displaying each sentence. The animation is triggered at the start and the end of the 
+script by pressing the button, and once the dialogue is complete from the script, the script commenses void 
+EndDialogue by setting the animation bool "IsOpen" to false. 
+
+NPC CONTROLLER 
+
+This code can be found in the script ProfessorControl. The purpose of this script is so the player can interact 
+with the NPC, which in doing so is what trigger the public list string of dialogue sentences, which are updated
+through the means of the other scripts. 
+
+HOW TO PLAY 
+
+- Press a & d or arrow keys left and right to move
+- Point and click "Lets Chat" button to talk to the NPC
+- Press skip to continue through the dialogue until the dialogue ends 

@@ -1,0 +1,28 @@
+Learning Journal;
+Week 3 Semester 2;
+-   I'm starting to think of a component I want to make ... something that could be benefitial for my AGP next year...
+-   I'm going to look at some tutorials ... Most def Brackeys https://www.youtube.com/user/Brackeys
+Week 4 Semester 2;
+-   I've decided what kind of component would be most benefitial for me atm ... A FPS controller, one that will allow me to interact in someway with the environment ...
+-   I found this tutorial on Brackey's Youtube ... https://www.youtube.com/watch?v=_QajrabyTJc&t=1285s it really helped with the character movement ...the camera movement, not so much 
+-   The camera would only move up and down on the Y axis and seemed clamped on the X axis ... I'm going try to sort it out by myself, I have time 
+-   I had no luck and was getting impatient ... I asked my classmate if they could help me, they suggested removing the clamp function in my code ... making it so the player could rotate freely ... this however made it so the player could she out the back of their head when they are travelling forward ... I will address this ISSUE later on 
+Week 5 Semester 2;
+-   N/A
+Week 6 Semester 2;
+-   I didn't do anything last week I feel bad tbh ... I have been preocupied with AGP stuff for Ste unfortunately 
+-   I have been looking into 'Zooming in' scripts on Youtube ... I feel like this would useful because it means that the player is able to zoom in and pick up detail from the background ... by Mouse Clicking maybe 
+-   I found this tutorial really useful ... its not by Brackeys, is on SpeedTutor's Youtube channel ... https://www.youtube.com/watch?v=-nKn7l1iu2g
+Week 7 Semester 2;
+-   N/A
+Week 8 Semester 2; 
+-   N/A
+Week 9 Semester 2;
+-   I have not been doing nearly as much work on this component as I would have wanted to ... I have been distracted by my part time job and my course work, I can only get in contact with people on discord ....
+-   I thought I would have a finished product by now 
+Week 10 Semester 2;
+-   I looked at a 2D tutorial for drag and dropping items and thought I could repurpose it for 3D ... It was published by a Youtuber called Alexander Zotov https://www.youtube.com/watch?v=p7akGCRgBLA&t=58s
+- I attempted the tutorial and it semi worked I could carry objects that had a specific tag and drop them ... the movement wasnt very smooth and after a while the object kept getting stuck to my cursor ... I had a look around at forums and got some other people's inputs over What'sapp ... One person pointed out the I got my Vectors mixed up which was really embarrassing ... 
+- I have got a semi usable pickup script now ...
+Week 11 Semester 2;
+- I have submitted my work and am happy with it tbh ... I realised that I did take inspo from Tutorials but I made sure that I had an understand of what the Youtuber was saying/trying to explain

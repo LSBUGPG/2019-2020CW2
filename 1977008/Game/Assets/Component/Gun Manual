@@ -1,0 +1,29 @@
+# HealthBar
+This document explains the behaviours contained in this package and describes how to use them to create a health bar appear above a objects head.
+
+## Behaviours
+
+- [`BillBoard`]
+- [`HealthBar`]
+- [`Player`]
+- [`PlayerMovement`]
+- [`Rotator`]
+
+
+## BillBoard
+
+This behaviour should be applied to which ever camera will be used as the player's perspective. 
+
+The behaviour responds to the `LookAt` method which makes a object always look towards the camera.
+
+It has the following configurable parameter:
+
+- Camera
+
+### Camera
+
+This allows the user to choose which camera they use.
+
+## HealthBar
+
+This behaviour should be applied to whatever the player object is meant to be. The behaviour responds to the `Slider` method which takes the value of a slider as the health. 

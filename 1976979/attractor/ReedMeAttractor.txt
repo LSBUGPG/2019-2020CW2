@@ -1,0 +1,2 @@
+give the script enemymov to a object. add a sphere collider trigger to the object .
+the object will move in the direction of the objects thaged as player.

@@ -1,0 +1,12 @@
+Package Instructions
+---------------------
+1. The Ability Controller and abilities script must be placed on the Player. The total mana, the MP5(mana regenerated per 5 seconds) and 
+   the abilities themselves can be customised. The text objects must be filled so the current ability and mana can be displayed.
+
+2. The player can enter the ability info in a data class list that stores the name, description and mana cost. There is a separate
+   script called Abilities that is blank and this script is where you code your ability functions. These can be anything and will 
+   be called in the switch statement. Just add a new switch for every ability.
+
+3. The abilities must be entered in the same order in the switch statement as they are in the editor. For example, if a teleport ability
+   was in switch 0 then it must also be the first entry into the ability list. This is so the indexes match up and mana cost can be referenced correctly
+   

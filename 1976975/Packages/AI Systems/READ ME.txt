@@ -1,0 +1,14 @@
+Package Instructions
+----------------------
+1. The AI Controller needs to be placed on an empty GameObject.
+
+2. The UpdateSpawnPool in the controller needs a reference to the current round of the game so it can add enemy types into the spawn pool at the correct rounds.
+   This can be handled externally by a Game Controller or internally by this script but I recommend a seperate script.
+
+3. You can make as many enemy types as you want. You give them a name, HP amount, round to spawn and the prefab to use and the Controller 
+   will add them into the spawn pool at the correct round
+
+4. The enemy health script can be applied to any enemy type and will grab the HP value set in the controller automatically.
+
+5. The melee enemy script can be placed on whatever enemy needs a melee behaviour. You must set the player transform so the enemy knows who to attack.
+   The enemy requires a navMeshAgent as well as having a navmesh baked for the map. Without a navmesh the enemies won't be able to move.
